@@ -26,12 +26,7 @@ public class SpawnObjFlutuantes : MonoBehaviour
         GameObject objFlutuanteParaSpawnar = spawnSystemObj.GetComponent<ObjFlutuanteManipulation>().
            EscolherObjSpawnar();
 
-        GameObject objFlutuantoGameObject = Instantiate(objFlutuanteParaSpawnar, posicaoSpawn, 
+        Instantiate(objFlutuanteParaSpawnar, posicaoSpawn, 
             objFlutuanteParaSpawnar.transform.rotation, gameObject.transform);
-
-        objFlutuantoGameObject.GetComponent<Rigidbody>().AddTorque(
-            new Vector3(0, Random.Range(-Random.value, Random.value), 
-            Random.Range(-Random.value, Random.value)), 
-            ForceMode.VelocityChange);
     }
 }

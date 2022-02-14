@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class OpenDoor : MonoBehaviour
 {
@@ -33,13 +34,21 @@ public class OpenDoor : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) {
         if (other.gameObject.CompareTag("Player")) {
-            GameObject.FindGameObjectWithTag("CanvasEnterDoor").GetComponent<Image>().enabled = true;
+
+            GameObject fundoPressToEnter = GameObject.FindGameObjectWithTag("CanvasEnterDoor");
+            fundoPressToEnter.GetComponent<Image>().enabled = true;
+            fundoPressToEnter.transform.GetChild(0).GetComponent<TextMeshProUGUI>().enabled = true;
+
             PressToEnter = true;
         }
     }
 
     private void OnTriggerExit(Collider other) {
-        GameObject.FindGameObjectWithTag("CanvasEnterDoor").GetComponent<Image>().enabled = false;
+
+        GameObject fundoPressToEnter = GameObject.FindGameObjectWithTag("CanvasEnterDoor");
+        fundoPressToEnter.GetComponent<Image>().enabled = false;
+        fundoPressToEnter.transform.GetChild(0).GetComponent<TextMeshProUGUI>().enabled = false;
+
         PressToEnter = false;
     }
 }
