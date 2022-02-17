@@ -7,6 +7,8 @@ TagManager:
   - CanvasEnterDoor
   - Corredor
   - Sala
+  - AudioController
+  - ObjFlutuante
   layers:
   - Default
   - TransparentFX
