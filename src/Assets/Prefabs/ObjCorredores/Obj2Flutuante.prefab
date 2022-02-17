@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5607006105803349531}
   - component: {fileID: -8206203622115837592}
   - component: {fileID: 3500622834900065362}
+  - component: {fileID: -2721237897748078243}
   m_Layer: 0
   m_Name: Obj2Flutuante
   m_TagString: ObjFlutuante
@@ -139,3 +140,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   narrativaClip: {fileID: 8300000, guid: c7e3e285d22062e4eb5826b148f3e775, type: 3}
+  habilitado: 0
+--- !u!114 &-2721237897748078243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5607006105803349529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebfe86ed3964dc941bf98aa555e540c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  limiteOpacidadeAtivarNarrativa: 0.2
