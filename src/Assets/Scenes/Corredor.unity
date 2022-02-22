@@ -2424,6 +2424,10 @@ PrefabInstance:
       value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 326172808373416614, guid: ea790249d8880f14b9bbd0062395a476, type: 3}
+      propertyPath: velocidadeMov
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 326172808373416614, guid: ea790249d8880f14b9bbd0062395a476, type: 3}
       propertyPath: movement_Speed
       value: 10
       objectReference: {fileID: 0}
@@ -2486,6 +2490,10 @@ PrefabInstance:
     - target: {fileID: 834930904774297215, guid: ea790249d8880f14b9bbd0062395a476, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 24.382936
+      objectReference: {fileID: 0}
+    - target: {fileID: 1079111548792412882, guid: ea790249d8880f14b9bbd0062395a476, type: 3}
+      propertyPath: maxVelocidadeMov
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 1085597243996060158, guid: ea790249d8880f14b9bbd0062395a476, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3450,6 +3458,8 @@ MonoBehaviour:
   - {fileID: 5607006105803349529, guid: f1eb42aa3b6a3fe41a8c23e3d238126d, type: 3}
   - {fileID: 414303449722832571, guid: a881278ea6e73e74c8814c42dfef5a70, type: 3}
   - {fileID: 8226390588940155486, guid: 8769b05b192365e48adc60afcf755362, type: 3}
+  - {fileID: 8226390588940155486, guid: cfc2dcc5719784f4f9dfefe2ab5af690, type: 3}
+  - {fileID: 8226390588940155486, guid: 6f438b724125592488b2403940e590bc, type: 3}
 --- !u!114 &2091420422
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -139,7 +139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8f1c78c3212fa45a1fc0c75197a844, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  narrativaClip: {fileID: 8300000, guid: c7e3e285d22062e4eb5826b148f3e775, type: 3}
+  narrativaClip: {fileID: 8300000, guid: 1e040b7c8be748048bf42a1026719faa, type: 3}
   habilitado: 0
 --- !u!114 &-2363817322275424712
 MonoBehaviour:

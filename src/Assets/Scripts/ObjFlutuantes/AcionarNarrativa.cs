@@ -6,6 +6,7 @@ public class AcionarNarrativa : MonoBehaviour
 {
     public AudioClip narrativaClip;
     private GameObject audioController;
+    [HideInInspector]
     public bool habilitado;
 
     // Start is called before the first frame update

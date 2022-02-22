@@ -482,25 +482,81 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2573894749870537754, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 987005e36d48fa841b4f08598e9bad10, type: 3}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: imagensVideos.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: tempoCadaImagem.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: imagensVideos.Array.data[0]
+      value: 
+      objectReference: {fileID: 2800000, guid: 92fdca116953cd64aab63a4330c2e326, type: 3}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: imagensVideos.Array.data[1]
+      value: 
+      objectReference: {fileID: 2800000, guid: 17f5a0174c49aea44ad45a9c11d9aaed, type: 3}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: imagensVideos.Array.data[2]
+      value: 
+      objectReference: {fileID: 2800000, guid: 5b4f35b2c825d5b46a374c6520fa2383, type: 3}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: imagensVideos.Array.data[3]
+      value: 
+      objectReference: {fileID: 2800000, guid: f41f35b36e1b78246bb73a76302bd841, type: 3}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: imagensVideos.Array.data[4]
+      value: 
+      objectReference: {fileID: 2800000, guid: 36da0bb95d5719146b1d32a7fa75f336, type: 3}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: imagensVideos.Array.data[5]
+      value: 
+      objectReference: {fileID: 2800000, guid: d80421c4655a81f4ca35c8cda478deef, type: 3}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: imagensVideos.Array.data[6]
+      value: 
+      objectReference: {fileID: 2800000, guid: 1534b63c689ed28408c273b4956c8b28, type: 3}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: imagensVideos.Array.data[7]
+      value: 
+      objectReference: {fileID: 2800000, guid: a830acb8bf96bfe4db9da5aaaf8dbaa2, type: 3}
     - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
       propertyPath: tempoCadaImagem.Array.data[0]
-      value: 3
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: tempoCadaImagem.Array.data[1]
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
       propertyPath: tempoCadaImagem.Array.data[2]
-      value: 3
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
       propertyPath: tempoCadaImagem.Array.data[3]
-      value: 3
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
       propertyPath: tempoCadaImagem.Array.data[4]
-      value: 3
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
       propertyPath: tempoCadaImagem.Array.data[5]
-      value: 3
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: tempoCadaImagem.Array.data[6]
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: tempoCadaImagem.Array.data[7]
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}

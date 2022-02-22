@@ -425,6 +425,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2573894749870537754, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2f6f1da2b1e0048408753140a51e3e69, type: 3}
     - target: {fileID: 6939563280702722988, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.12
@@ -432,6 +436,126 @@ PrefabInstance:
     - target: {fileID: 6939563280702722988, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
       propertyPath: m_LocalPosition.y
       value: 3.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: numeroImagens
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: imagensVideos.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: tempoCadaImagem.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: imagensVideos.Array.data[0]
+      value: 
+      objectReference: {fileID: 2800000, guid: e23131962c6c006488eda53e3a331dfc, type: 3}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: imagensVideos.Array.data[1]
+      value: 
+      objectReference: {fileID: 2800000, guid: 474f0cf37cec3eb4d90e3228aeb74379, type: 3}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: imagensVideos.Array.data[2]
+      value: 
+      objectReference: {fileID: 2800000, guid: 49f76886d1f1f0546ae96dd1d961094c, type: 3}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: imagensVideos.Array.data[3]
+      value: 
+      objectReference: {fileID: 2800000, guid: 9d503bf43f650974a8676fbdd0eaf27c, type: 3}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: imagensVideos.Array.data[4]
+      value: 
+      objectReference: {fileID: 2800000, guid: 250a10abd8739eb40b16018067b5075d, type: 3}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: imagensVideos.Array.data[5]
+      value: 
+      objectReference: {fileID: 2800000, guid: be43417e4b69c5941810a2556459dc2e, type: 3}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: imagensVideos.Array.data[6]
+      value: 
+      objectReference: {fileID: 2800000, guid: 907842a519175ef49979cbc7e906834c, type: 3}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: imagensVideos.Array.data[7]
+      value: 
+      objectReference: {fileID: 2800000, guid: f718993fe25067d43a920489655c608a, type: 3}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: tempoCadaImagem.Array.data[0]
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: tempoCadaImagem.Array.data[1]
+      value: 5.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: tempoCadaImagem.Array.data[2]
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: tempoCadaImagem.Array.data[3]
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: tempoCadaImagem.Array.data[4]
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: tempoCadaImagem.Array.data[5]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: tempoCadaImagem.Array.data[6]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: tempoCadaImagem.Array.data[7]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: imagensVideosPathName.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: imagensVideosPathName.Array.data[0]
+      value: Slugan1/Menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: imagensVideosPathName.Array.data[1]
+      value: Slugan1/PuloAngulo
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: imagensVideosPathName.Array.data[2]
+      value: Slugan1/Obstaculos
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: imagensVideosPathName.Array.data[3]
+      value: Slugan1/Topo
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: imagensVideosPathName.Array.data[4]
+      value: Slugan1/Foguete
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: imagensVideosPathName.Array.data[5]
+      value: Slugan1/Cientista
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: imagensVideosPathName.Array.data[6]
+      value: Slugan1/Caido
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: imagensVideosPathName.Array.data[7]
+      value: Slugan1/SluganMal
+      objectReference: {fileID: 0}
+    - target: {fileID: 8615102363034735460, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.7636724
+      objectReference: {fileID: 0}
+    - target: {fileID: 8615102363034735460, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 18.12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
