@@ -558,5 +558,21 @@ PrefabInstance:
       propertyPath: tempoCadaImagem.Array.data[7]
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 8615102363034735460, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6097968
+      objectReference: {fileID: 0}
+    - target: {fileID: 8615102363034735460, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 8615102363034735460, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.8454924
+      objectReference: {fileID: 0}
+    - target: {fileID: 8615102363034735460, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 18.42
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
