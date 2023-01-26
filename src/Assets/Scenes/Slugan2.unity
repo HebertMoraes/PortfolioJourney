@@ -524,7 +524,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6058069537401447467, guid: be5892e7469c9e648ba9a1be5a8335c3, type: 3}
       propertyPath: m_Name
-      value: PersonagemSala (1)
+      value: PersonagemSala
       objectReference: {fileID: 0}
     - target: {fileID: 6870600261490835089, guid: be5892e7469c9e648ba9a1be5a8335c3, type: 3}
       propertyPath: m_RootOrder

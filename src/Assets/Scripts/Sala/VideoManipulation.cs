@@ -6,11 +6,12 @@ public class VideoManipulation : MonoBehaviour
 {
     public List<Texture2D> imagensVideos;
     public List<float> tempoCadaImagem;
+    public MovCortinas movCortinas;
 
     private Material materialImg;
     private float tempoEsperaImg;
     private int imgAtual;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,18 +22,24 @@ public class VideoManipulation : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {   
-        if (imgAtual < imagensVideos.Capacity) {
+    {
+        if (movCortinas.abertas)
+        {
+            if (imgAtual < imagensVideos.Capacity)
+            {
+                if (tempoEsperaImg >= tempoCadaImagem[imgAtual])
+                {
+                    materialImg.mainTexture = imagensVideos[imgAtual];
+                    imgAtual += 1;
+                    tempoEsperaImg = 0;
+                }
 
-            if (tempoEsperaImg >= tempoCadaImagem[imgAtual]) {
-                materialImg.mainTexture = imagensVideos[imgAtual];
-                imgAtual += 1;
-                tempoEsperaImg = 0;
+                tempoEsperaImg += Time.deltaTime;
             }
-
-            tempoEsperaImg += Time.deltaTime;
-        } else {
-            //acabou o video
+            else
+            {
+                //acabou o video
+            }
         }
     }
 }
