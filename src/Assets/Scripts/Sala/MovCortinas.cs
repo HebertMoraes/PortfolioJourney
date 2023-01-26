@@ -24,7 +24,7 @@ public class MovCortinas : MonoBehaviour
     {
         if (cortinaLeft.position.x <= -xToMove) {
             if (!abertas) {
-                audioSourceVideo.Play();
+                // audioSourceVideo.Play();
             }
             abertas = true;
         } else {
