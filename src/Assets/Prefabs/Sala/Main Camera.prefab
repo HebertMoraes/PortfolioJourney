@@ -96,5 +96,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0e308c89a9ada64da834db9c682e458, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  indiceParedeEsquerda: 2
-  indiceParedeDireita: 3
+  posXLimiteMin: -6
+  posXLimiteMax: 6
