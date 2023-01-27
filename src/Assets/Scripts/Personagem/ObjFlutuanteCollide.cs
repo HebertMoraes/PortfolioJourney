@@ -27,6 +27,7 @@ public class ObjFlutuanteCollide : MonoBehaviour
         */
         if (hit.gameObject.CompareTag("ObjFlutuante")) {
             hit.gameObject.GetComponent<AcionarNarrativa>().iniciarNarrativa();
+            hit.gameObject.GetComponent<AcionarLegendaHud>().AtivarLegenda();
         }
         //
     }

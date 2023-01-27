@@ -10,11 +10,13 @@ public class OpenDoor : MonoBehaviour
     public string sceneToEnter;
     private bool PressToEnter;
     private GameObject SpawnSystemObj;
+    private GameObject fundoPressToEnter;
 
     // Start is called before the first frame update
     void Start()
     {
         SpawnSystemObj = GameObject.FindGameObjectWithTag("GameController");
+        fundoPressToEnter = GameObject.Find("FundoEnterDoor");
     }
 
     // Update is called once per frame
@@ -34,9 +36,7 @@ public class OpenDoor : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) {
         if (other.gameObject.CompareTag("Player")) {
-
-            GameObject fundoPressToEnter = GameObject.FindGameObjectWithTag("CanvasEnterDoor");
-            fundoPressToEnter.GetComponent<Image>().enabled = true;
+            fundoPressToEnter.GetComponent<RawImage>().enabled = true;
             fundoPressToEnter.transform.GetChild(0).GetComponent<TextMeshProUGUI>().enabled = true;
 
             PressToEnter = true;
@@ -44,9 +44,7 @@ public class OpenDoor : MonoBehaviour
     }
 
     private void OnTriggerExit(Collider other) {
-
-        GameObject fundoPressToEnter = GameObject.FindGameObjectWithTag("CanvasEnterDoor");
-        fundoPressToEnter.GetComponent<Image>().enabled = false;
+        fundoPressToEnter.GetComponent<RawImage>().enabled = false;
         fundoPressToEnter.transform.GetChild(0).GetComponent<TextMeshProUGUI>().enabled = false;
 
         PressToEnter = false;

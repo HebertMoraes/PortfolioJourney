@@ -48,7 +48,7 @@ public class MudarScene : MonoBehaviour
     }
 
     //pelo o que eu vi, as vezes buga não sei porque e o jogador não volta na sua última posição
-    //quando entrou na porta, ele fica na posição inicial do esitor, então abaixo é a tentativa 
+    //quando entrou na porta, ele fica na posição inicial do editor, então abaixo é a tentativa 
     //para corrigir
     //DEU CERTO, ISSO CORRIGIU, PORTANTO, SIGNIFICA QUE OS OUTROS OBJETOS QUE ESTÃO SENDO 
     //ALTERADOS SUAS POSIÇÕES PARA OS DO SAVE PODEM NÃO ESTAR CARREGANDO ASSIM COMO O JOGADOR
