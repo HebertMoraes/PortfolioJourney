@@ -578,6 +578,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 2616383393881097710, guid: 4cec697c01a0f274dbfc4779c60ff712, type: 3}
+      propertyPath: posXLimiteMax
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2616383393881097710, guid: 4cec697c01a0f274dbfc4779c60ff712, type: 3}
+      propertyPath: posXLimiteMin
+      value: -5
+      objectReference: {fileID: 0}
     - target: {fileID: 2616383393881097711, guid: 4cec697c01a0f274dbfc4779c60ff712, type: 3}
       propertyPath: m_RootOrder
       value: 0
