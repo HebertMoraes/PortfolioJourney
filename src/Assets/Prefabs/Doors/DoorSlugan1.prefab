@@ -59,7 +59,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToEnter: Slugan1
-  PressToEnter: 0
 --- !u!1 &7868311493363481828
 GameObject:
   m_ObjectHideFlags: 0

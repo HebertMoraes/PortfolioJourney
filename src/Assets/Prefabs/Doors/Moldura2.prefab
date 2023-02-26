@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2426288647615266240
+--- !u!1 &2835183321186607263
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,45 +8,45 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3089530947513345914}
-  - component: {fileID: 2112156968059988191}
-  - component: {fileID: 4227495609084681237}
+  - component: {fileID: 3175961984575273509}
+  - component: {fileID: 1998634015750354304}
+  - component: {fileID: 4348335690876911946}
   m_Layer: 0
-  m_Name: Moldura2
+  m_Name: Moldura2Obj
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3089530947513345914
+--- !u!4 &3175961984575273509
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2426288647615266240}
+  m_GameObject: {fileID: 2835183321186607263}
   m_LocalRotation: {x: -0.014018821, y: 0.7069679, z: 0.7069677, w: 0.014018821}
-  m_LocalPosition: {x: -0.059997, y: 1.22, z: 0.49}
-  m_LocalScale: {x: 0.42721647, y: 0.42721647, z: 0.42721647}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.4500726, y: 0.4500726, z: 0.5817952}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 5627605002154592047}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 177.728}
---- !u!33 &2112156968059988191
+--- !u!33 &1998634015750354304
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2426288647615266240}
+  m_GameObject: {fileID: 2835183321186607263}
   m_Mesh: {fileID: -4146931179504492528, guid: 27f5321142f4664459249229006c0218, type: 3}
---- !u!23 &4227495609084681237
+--- !u!23 &4348335690876911946
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2426288647615266240}
+  m_GameObject: {fileID: 2835183321186607263}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -81,3 +81,94 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &4286901086009008772
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1030670345576902168}
+  - component: {fileID: 5777424656614382124}
+  - component: {fileID: 4615896444237237768}
+  m_Layer: 0
+  m_Name: verificadorOpen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1030670345576902168
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4286901086009008772}
+  m_LocalRotation: {x: -0.014018821, y: 0.7069679, z: 0.7069677, w: 0.014018821}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.45007256, y: 0.45007256, z: 0.5817952}
+  m_Children: []
+  m_Father: {fileID: 5627605002154592047}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &5777424656614382124
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4286901086009008772}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 2.89
+  m_Height: 6.31
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4615896444237237768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4286901086009008772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e1c6769561e3df409083e616af2d915, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToEnter: Slugan2
+--- !u!1 &4399265883657610995
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5627605002154592047}
+  m_Layer: 0
+  m_Name: Moldura2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5627605002154592047
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4399265883657610995}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3175961984575273509}
+  - {fileID: 1030670345576902168}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

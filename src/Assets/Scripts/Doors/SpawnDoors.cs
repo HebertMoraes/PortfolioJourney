@@ -24,7 +24,17 @@ public class SpawnDoors : MonoBehaviour
         GameObject portaParaSpawnar = spawnSystemObj.GetComponent<DoorManipulation>().
             EscolherPortaSpawnar();
 
-        Instantiate(portaParaSpawnar, posicaoSpawn, portaParaSpawnar.transform.rotation, 
-            gameObject.transform);
+        GameObject newDoor = Instantiate(portaParaSpawnar, posicaoSpawn, 
+                portaParaSpawnar.transform.rotation, gameObject.transform);
+
+
+        if(tranformParedeAtual.transform.GetSiblingIndex() == 0) {
+            newDoor.transform.Rotate(new Vector3(0, -90, 0));
+        } else if (tranformParedeAtual.transform.GetSiblingIndex() == 1) {
+            newDoor.transform.Rotate(new Vector3(0, 90, 0));
+        } else {
+            newDoor.transform.Rotate(new Vector3(0, -90, 0));
+        }
+        newDoor.transform.Translate(new Vector3(0, 0, (float)-0.6));
     }
 }
