@@ -381,6 +381,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sala
       objectReference: {fileID: 0}
+    - target: {fileID: 594033737541594200, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 594033737541594203, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -436,6 +440,10 @@ PrefabInstance:
     - target: {fileID: 2573894749870537754, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
       propertyPath: m_PlayOnAwake
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4307160084510196862, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6939563280702722988, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
       propertyPath: m_LocalPosition.x
@@ -577,6 +585,10 @@ PrefabInstance:
     - target: {fileID: 2616383393881097706, guid: 4cec697c01a0f274dbfc4779c60ff712, type: 3}
       propertyPath: m_Name
       value: Main Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 2616383393881097706, guid: 4cec697c01a0f274dbfc4779c60ff712, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2616383393881097710, guid: 4cec697c01a0f274dbfc4779c60ff712, type: 3}
       propertyPath: posXLimiteMax
