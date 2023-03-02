@@ -9,7 +9,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Aberto
+    m_ConditionEvent: abrindo
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 8794277405863612746}
@@ -71,11 +71,17 @@ AnimatorController:
   m_Name: CortinaAnim
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: Aberto
+  - m_Name: aberto
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
-    m_DefaultBool: 1
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
+  - m_Name: abrindo
+    m_Type: 4
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
     m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5

@@ -6,8 +6,8 @@ public class VideoManipulation : MonoBehaviour
 {
     public List<Texture2D> imagensVideos;
     public List<float> tempoCadaImagem;
-    public MovCortinas movCortinas;
-
+    // public MovCortinas movCortinas;
+    public Animator cortinasAnim;
     private Material materialImg;
     private float tempoEsperaImg;
     private int imgAtual;
@@ -23,7 +23,8 @@ public class VideoManipulation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (movCortinas.abertas)
+        // if (movCortinas.abertas)
+        if (cortinasAnim.GetBool("aberto"))
         {
             if (imgAtual < imagensVideos.Capacity)
             {

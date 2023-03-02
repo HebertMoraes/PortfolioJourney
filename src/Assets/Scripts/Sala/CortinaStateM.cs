@@ -25,6 +25,7 @@ public class CortinaStateM : StateMachineBehaviour
         if (currentFrame >= 116)
         {
             animator.speed = 0;
+            animator.SetBool("aberto", true);
         }
     }
 
