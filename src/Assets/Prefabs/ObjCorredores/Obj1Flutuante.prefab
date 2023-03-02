@@ -168,5 +168,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c475317803855094a9c85e3025103b4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  txtLegenda: um
-  tempoMaxComLegendaOn: 1
+  txtLegenda: "Possuo certifica\xE7\xE3o AWS Cloud Practioner e Scrums Fundamentals
+    pela Scrum Study."
+  tempoComLegendaOn: 3

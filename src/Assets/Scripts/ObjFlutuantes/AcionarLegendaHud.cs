@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class AcionarLegendaHud : MonoBehaviour
 {
+    [TextAreaAttribute]
     public string txtLegenda;
-    public float tempoMaxComLegendaOn;
+    public float tempoComLegendaOn;
     private LegendaHudManipulation legManipulation;
 
     // Start is called before the first frame update
@@ -22,6 +23,6 @@ public class AcionarLegendaHud : MonoBehaviour
 
     public void AtivarLegenda()
     {
-        legManipulation.AtivarLegenda(tempoMaxComLegendaOn, txtLegenda);
+        legManipulation.AtivarLegenda(tempoComLegendaOn, txtLegenda);
     }
 }

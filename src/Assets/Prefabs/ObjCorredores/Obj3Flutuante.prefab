@@ -168,5 +168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c475317803855094a9c85e3025103b4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  txtLegenda: tres
-  tempoMaxComLegendaOn: 3
+  txtLegenda: "Trabalhei no bradesco por volta de 1 ano atuando como desenvolvedor
+    front-end, utilizando o framework angular de linguagem typescript, com Sass de
+    estiliza\xE7\xE3o e Jasmine sendo o framework de testes unit\xE1rios."
+  tempoComLegendaOn: 5
