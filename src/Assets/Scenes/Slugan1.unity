@@ -229,7 +229,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4776639226149597290, guid: 7336d304c4d0d3e46a14ba9c14a80319, type: 3}
       propertyPath: m_text
-      value: PRESS X TO OPEN
+      value: PRESS X TO ENTER
       objectReference: {fileID: 0}
     - target: {fileID: 8481150132161563990, guid: 7336d304c4d0d3e46a14ba9c14a80319, type: 3}
       propertyPath: m_Name

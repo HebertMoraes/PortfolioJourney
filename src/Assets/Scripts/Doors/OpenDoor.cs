@@ -16,7 +16,12 @@ public class OpenDoor : MonoBehaviour
     void Start()
     {
         SpawnSystemObj = GameObject.FindGameObjectWithTag("GameController");
-        fundoPressToEnter = GameObject.Find("FundoEnterDoor");
+
+        if (SceneManager.GetActiveScene().name == "Corredor") {
+            fundoPressToEnter = GameObject.Find("FundoEnterDoor");
+        } else {
+            fundoPressToEnter = GameObject.Find("FundoExitDoor");
+        }
     }
 
     // Update is called once per frame
