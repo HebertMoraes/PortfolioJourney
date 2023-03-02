@@ -11,7 +11,7 @@ public class AcionarLegendaHud : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        legManipulation = GameObject.Find("Canvas").transform.GetChild(1).gameObject.GetComponent<LegendaHudManipulation>();
+        legManipulation = GameObject.Find("Canvas").transform.GetChild(2).gameObject.GetComponent<LegendaHudManipulation>();
     }
 
     // Update is called once per frame
