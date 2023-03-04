@@ -5,6 +5,7 @@ using UnityEngine;
 public class CortinaStateM : StateMachineBehaviour
 {
     private AudioSource audioVideo;
+    private bool audioJaIniciado;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
@@ -29,13 +30,14 @@ public class CortinaStateM : StateMachineBehaviour
         }
         if (currentFrame >= 116)
         {
-            animator.speed = 0;
-            animator.SetBool("aberto", true);
-            if (!audioVideo.isPlaying)
+
+            if (!audioJaIniciado)
             {
+                animator.speed = 0;
+                animator.SetBool("aberto", true);
+                audioJaIniciado = true;
                 audioVideo.Play();
             }
-
         }
     }
 

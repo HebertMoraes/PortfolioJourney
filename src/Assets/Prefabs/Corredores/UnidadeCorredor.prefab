@@ -64,7 +64,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distanciaDelete: 15
-  distanciaSpawn: 25
+  distanciaSpawn: 23
 --- !u!114 &8128941681861602361
 MonoBehaviour:
   m_ObjectHideFlags: 0
