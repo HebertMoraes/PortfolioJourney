@@ -65,6 +65,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distanciaDelete: 15
   distanciaSpawn: 23
+  corredorPrefab: {fileID: 3164054843004659325}
 --- !u!114 &8128941681861602361
 MonoBehaviour:
   m_ObjectHideFlags: 0

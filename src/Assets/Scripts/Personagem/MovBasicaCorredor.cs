@@ -12,7 +12,7 @@ public class MovBasicaCorredor : MonoBehaviour
     public float zMaxPosicao;
     public float zMinPosicao;
     
-    public GameObject corredorPrefab;
+    // public GameObject corredorPrefab;
 
     public float velocidadeMov;
     private float velRotacaoAtual;

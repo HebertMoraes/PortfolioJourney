@@ -14,8 +14,10 @@ public class SpawnCorredor : MonoBehaviour
     void Start()
     {
         personagem = GameObject.FindGameObjectWithTag("Player");
+
         //Talvez seja melhor e faça mais sentido esse prefab do corredor estar no GameController
-        corredorPrefab = personagem.GetComponent<MovBasicaCorredor>().corredorPrefab;
+        // corredorPrefab = personagem.GetComponent<MovBasicaCorredor>().corredorPrefab;
+        corredorPrefab = personagem.GetComponent<MovPlayer>().corredorPrefab;
 
         if (gameObject.GetComponent<SpawnDoors>().isActiveAndEnabled) {
             gameObject.GetComponent<SpawnDoors>().SpawnDoorMethod();
@@ -29,7 +31,7 @@ public class SpawnCorredor : MonoBehaviour
     void FixedUpdate()
     {
         if (gameObject.transform.position.z <= -distanciaDelete
-            && personagem.GetComponent<MovBasicaCorredor>().andandoMaxParaFrente) {
+            && personagem.GetComponent<MovPlayer>().andandoMaxParaFrente) {
             
             Vector3 posicaoParaSpawn = new Vector3(corredorPrefab.transform.position.x, 
                 corredorPrefab.transform.position.y, 

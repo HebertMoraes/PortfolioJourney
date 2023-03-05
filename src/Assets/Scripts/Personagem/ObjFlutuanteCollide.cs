@@ -21,7 +21,6 @@ public class ObjFlutuanteCollide : MonoBehaviour
         if (hit.gameObject.CompareTag("ObjFlutuante") && podeTocarNarrativa) {
             podeTocarNarrativa = false;
             contarEspera = true;
-            Debug.Log("alouu");
             hit.gameObject.GetComponent<AcionarNarrativa>().iniciarNarrativa();
         }
         */

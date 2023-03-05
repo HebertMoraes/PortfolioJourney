@@ -27,21 +27,21 @@ public class MovimentacaoCorredor : MonoBehaviour
             }
         }
 
-        if (personagem.GetComponent<MovBasicaCorredor>().andandoMaxParaFrente) {
+        if (personagem.GetComponent<MovPlayer>().andandoMaxParaFrente) {
 
             gameObject.transform.position = new Vector3(
                 gameObject.transform.position.x,
                 gameObject.transform.position.y,
-                gameObject.transform.position.z - personagem.GetComponent<MovBasicaCorredor>().
+                gameObject.transform.position.z - personagem.GetComponent<MovPlayer>().
                     velocidadeMov * Time.deltaTime);
         }
-        if (personagem.GetComponent<MovBasicaCorredor>().andandoMaxParaTras && corredoresMaisQueLimite 
+        if (personagem.GetComponent<MovPlayer>().andandoMaxParaTras && corredoresMaisQueLimite 
             >= limiteCorredorAtras) {
 
             gameObject.transform.position = new Vector3(
                 gameObject.transform.position.x,
                 gameObject.transform.position.y,
-                gameObject.transform.position.z + personagem.GetComponent<MovBasicaCorredor>().
+                gameObject.transform.position.z + personagem.GetComponent<MovPlayer>().
                     velocidadeMov * Time.deltaTime);
         }
     }
