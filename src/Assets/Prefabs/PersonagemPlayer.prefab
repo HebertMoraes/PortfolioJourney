@@ -201,6 +201,7 @@ GameObject:
   - component: {fileID: 5685802661221566335}
   - component: {fileID: 3741837499286540590}
   - component: {fileID: 1265414225685763121}
+  - component: {fileID: 317753580961384358}
   - component: {fileID: 5870012081771280003}
   m_Layer: 0
   m_Name: PersonagemPlayer
@@ -287,7 +288,21 @@ MonoBehaviour:
   zMaxPosicao: 1
   zMinPosicao: -6
   velocidadeMov: 10
+  alturaMaxPulo: 2
   corredorPrefab: {fileID: 3164054843004659325, guid: ef42cc381e4f2c448a978d87ee2ecd8b, type: 3}
+--- !u!114 &317753580961384358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1388229213522790335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a054bf93521111a40bad9fd9a404f0ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forcaEmpurrar: 1
 --- !u!114 &5870012081771280003
 MonoBehaviour:
   m_ObjectHideFlags: 0
