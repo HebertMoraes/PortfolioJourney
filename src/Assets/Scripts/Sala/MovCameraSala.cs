@@ -11,7 +11,7 @@ public class MovCameraSala : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        velocidadeMovPlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<MovBasicaSala>().velocidadeMov;
+        velocidadeMovPlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<MovPlayer>().velocidadeMov;
     }
 
     // Update is called once per frame

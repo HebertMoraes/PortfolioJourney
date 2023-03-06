@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MovPlayer : MonoBehaviour
 {
@@ -28,7 +29,10 @@ public class MovPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        VerificarMaximosZ();
+        if (SceneManager.GetActiveScene().name == "Corredor") {
+            VerificarMaximosZ();
+        }
+        
 
         newMove.Set(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         if (newMove != Vector3.zero) {
@@ -36,11 +40,13 @@ public class MovPlayer : MonoBehaviour
         }
         newMove.y = Physics.gravity.y * Time.deltaTime;
 
-        if (newMove.z > 0 && andandoMaxParaFrente) {
-            newMove.z = 0;
-        } 
-        if (newMove.z < 0 && andandoMaxParaTras) {
-            newMove.z = 0;
+        if (SceneManager.GetActiveScene().name == "Corredor") {
+            if (newMove.z > 0 && andandoMaxParaFrente) {
+                newMove.z = 0;
+            } 
+            if (newMove.z < 0 && andandoMaxParaTras) {
+                newMove.z = 0;
+            }
         }
 
         if (charControll.isGrounded && Input.GetKey(KeyCode.Space))
