@@ -38,7 +38,10 @@ public class MovPlayer : MonoBehaviour
         if (newMove != Vector3.zero) {
             transform.forward = Vector3.Slerp(transform.forward, newMove, Time.deltaTime * 10);
         }
-        newMove.y = Physics.gravity.y * Time.deltaTime;
+
+        if (!animator.GetBehaviour<JumpSM>().paradoNoAr) {
+            newMove.y = Physics.gravity.y * Time.deltaTime;
+        }
 
         if (SceneManager.GetActiveScene().name == "Corredor") {
             if (newMove.z > 0 && andandoMaxParaFrente) {

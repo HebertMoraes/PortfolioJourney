@@ -200,6 +200,8 @@ MonoBehaviour:
   alturaMaxPulo: 2
   velocidadePulo: 10
   velocidadePouso: -10
+  tempoMaxNoAr: 0.2
+  paradoNoAr: 0
 --- !u!1101 &2659983971691338426
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
