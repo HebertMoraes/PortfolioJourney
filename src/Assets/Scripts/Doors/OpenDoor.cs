@@ -8,30 +8,30 @@ using TMPro;
 public class OpenDoor : MonoBehaviour
 {
     public string sceneToEnter;
-    private bool PressToEnter;
-    private GameObject SpawnSystemObj;
-    private GameObject fundoPressToEnter;
+    private bool pressToEnter;
+    private GameObject spawnSystemObj;
+    private GameObject boxGUItoShow;
 
     // Start is called before the first frame update
     void Start()
     {
-        SpawnSystemObj = GameObject.FindGameObjectWithTag("GameController");
+        spawnSystemObj = GameObject.FindGameObjectWithTag("GameController");
 
         if (SceneManager.GetActiveScene().name == "Corredor") {
-            fundoPressToEnter = GameObject.Find("FundoEnterDoor");
+            boxGUItoShow = GameObject.Find("UIEnterDoor");
         } else {
-            fundoPressToEnter = GameObject.Find("FundoExitDoor");
+            boxGUItoShow = GameObject.Find("UIExitDoor");
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (PressToEnter) {
+        if (pressToEnter) {
             if (Input.GetKeyDown(KeyCode.X)) {
                 
                 if (SceneManager.GetActiveScene().name == "Corredor"){
-                    SpawnSystemObj.GetComponent<MudarScene>().mudarSalvarObjs(sceneToEnter);
+                    spawnSystemObj.GetComponent<MudarScene>().mudarSalvarObjs(sceneToEnter);
                 } else {
                     SceneManager.LoadScene(sceneToEnter);
                 }
@@ -41,17 +41,19 @@ public class OpenDoor : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) {
         if (other.gameObject.CompareTag("Player")) {
-            fundoPressToEnter.GetComponent<RawImage>().enabled = true;
-            fundoPressToEnter.transform.GetChild(0).GetComponent<TextMeshProUGUI>().enabled = true;
+            boxGUItoShow.GetComponent<RawImage>().enabled = true;
+            boxGUItoShow.transform.GetChild(0).GetComponent<RawImage>().enabled = true;
+            boxGUItoShow.transform.GetChild(1).GetComponent<TextMeshProUGUI>().enabled = true;
 
-            PressToEnter = true;
+            pressToEnter = true;
         }
     }
 
     private void OnTriggerExit(Collider other) {
-        fundoPressToEnter.GetComponent<RawImage>().enabled = false;
-        fundoPressToEnter.transform.GetChild(0).GetComponent<TextMeshProUGUI>().enabled = false;
+        boxGUItoShow.GetComponent<RawImage>().enabled = false;
+        boxGUItoShow.transform.GetChild(0).GetComponent<RawImage>().enabled = false;
+        boxGUItoShow.transform.GetChild(1).GetComponent<TextMeshProUGUI>().enabled = false;
 
-        PressToEnter = false;
+        pressToEnter = false;
     }
 }

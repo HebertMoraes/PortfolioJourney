@@ -31,7 +31,9 @@ public class LegendaHudManipulation : MonoBehaviour
     public void AtivarLegenda(float tempoMaxComLegendaOn, string txtLegenda)
     {
         gameObject.GetComponent<RawImage>().enabled = true;
-        transform.GetChild(0).gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = txtLegenda;
+        transform.GetChild(0).GetComponent<RawImage>().enabled = true;
+
+        transform.GetChild(1).gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = txtLegenda;
         legendaOn = true;
         tempoComLegendaOn = 0;
         this.tempoMaxComLegendaOn = tempoMaxComLegendaOn;
@@ -42,6 +44,8 @@ public class LegendaHudManipulation : MonoBehaviour
         legendaOn = false;
         tempoComLegendaOn = 0;
         gameObject.GetComponent<RawImage>().enabled = false;
-        transform.GetChild(0).gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = "";
+        transform.GetChild(0).GetComponent<RawImage>().enabled = false;
+
+        transform.GetChild(1).gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = "";
     }
 }

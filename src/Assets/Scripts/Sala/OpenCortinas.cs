@@ -13,7 +13,7 @@ public class OpenCortinas : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PressToOpenObj = GameObject.Find("OpenCortina");
+        PressToOpenObj = GameObject.Find("UIOpenCortina");
     }
 
     // Update is called once per frame
@@ -23,7 +23,8 @@ public class OpenCortinas : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.X)) {
                 PressToOpen = false;
                 PressToOpenObj.GetComponent<RawImage>().enabled = false;
-                PressToOpenObj.transform.GetChild(0).GetComponent<TextMeshProUGUI>().enabled = false;
+                PressToOpenObj.transform.GetChild(0).GetComponent<RawImage>().enabled = false;
+                PressToOpenObj.transform.GetChild(1).GetComponent<TextMeshProUGUI>().enabled = false;
                 cortinasAnim.SetBool("abrindo", true);
             }
         }
@@ -32,7 +33,8 @@ public class OpenCortinas : MonoBehaviour
     private void OnTriggerEnter(Collider other) {
         if (other.gameObject.CompareTag("Player") && !cortinasAnim.GetBool("abrindo") && !cortinasAnim.GetBool("aberto")) {
             PressToOpenObj.GetComponent<RawImage>().enabled = true;
-            PressToOpenObj.transform.GetChild(0).GetComponent<TextMeshProUGUI>().enabled = true;
+            PressToOpenObj.transform.GetChild(0).GetComponent<RawImage>().enabled = true;
+            PressToOpenObj.transform.GetChild(1).GetComponent<TextMeshProUGUI>().enabled = true;
 
             PressToOpen = true;
         }
@@ -40,7 +42,8 @@ public class OpenCortinas : MonoBehaviour
 
     private void OnTriggerExit(Collider other) {
         PressToOpenObj.GetComponent<RawImage>().enabled = false;
-        PressToOpenObj.transform.GetChild(0).GetComponent<TextMeshProUGUI>().enabled = false;
+        PressToOpenObj.transform.GetChild(0).GetComponent<RawImage>().enabled = false;
+        PressToOpenObj.transform.GetChild(1).GetComponent<TextMeshProUGUI>().enabled = false;
 
         PressToOpen = false;
     }
