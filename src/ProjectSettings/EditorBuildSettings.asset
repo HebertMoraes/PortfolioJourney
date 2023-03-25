@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Slugan4.unity
     guid: 4c7c865c4aaac2444ba79a4e642ca5b2
+  - enabled: 1
+    path: Assets/Scenes/RucksterPursuitOnTheRails.unity
+    guid: 3d051a0cc2dd03543892b53930b792f1
   m_configObjects: {}

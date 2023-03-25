@@ -2843,6 +2843,7 @@ MonoBehaviour:
   - {fileID: 4399265883657610995, guid: 811d2dd5ec4a5ae44a6c1928a116505d, type: 3}
   - {fileID: 8566947040779228929, guid: 028f9fd1be465c644a83d4e07d14bc08, type: 3}
   - {fileID: 2638151315551360030, guid: 2ca11d4ef1448f4448dcab52600c3353, type: 3}
+  - {fileID: 7559881271440698618, guid: b5cc4351f1e26004abb26e858ff159cb, type: 3}
 --- !u!4 &2091420420
 Transform:
   m_ObjectHideFlags: 0
