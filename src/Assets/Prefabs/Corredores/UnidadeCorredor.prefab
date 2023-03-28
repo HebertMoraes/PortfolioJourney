@@ -103,6 +103,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lampadaPrefab: {fileID: 5420765891474778149, guid: 0498e03f0370aba41885db86a13c8348, type: 3}
+  posXSpawnLeft: -4.4
+  posXSpawnRight: 4.4
+  posYToSpawn: 2.2
+  chanceToSpawn: 0.5
 --- !u!1 &3164054844057962217
 GameObject:
   m_ObjectHideFlags: 0

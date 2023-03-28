@@ -6,32 +6,44 @@ public class SpawnLampada : MonoBehaviour
 {
     public GameObject lampadaPrefab;
 
+    public float posXSpawnLeft;
+    public float posXSpawnRight;
+    public float posYToSpawn;
+    public float chanceToSpawn;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-    public void SpawnLamp(int indexWall) {
+    public void SpawnLamp(int indexWall, float posZToSpawn)
+    {
+        if (chanceToSpawn >= Random.value)
+        {
+            Vector3 posicaoSpawn = new Vector3(
+                indexWall == 0 ? posXSpawnRight : posXSpawnLeft,
+                posYToSpawn,
+                posZToSpawn + Random.Range(-1, 2)
+            );
 
-        Vector3 posicaoSpawn = new Vector3(lampadaPrefab.transform.position.x, 
-            lampadaPrefab.transform.position.y, lampadaPrefab.transform.position.z + Random.Range(-1, 2));
+            GameObject newLampada = Instantiate(
+                lampadaPrefab,
+                posicaoSpawn,
+                lampadaPrefab.transform.rotation,
+                transform
+            );
 
-        GameObject newLampada = Instantiate(lampadaPrefab, 
-                posicaoSpawn, 
-                lampadaPrefab.transform.rotation, 
-                indexWall == 0? transform.GetChild(1) : transform.GetChild(0));
-
-        if (indexWall == 0) {
-            newLampada.transform.Rotate(new Vector3(0, -90, 0));
-        } else {
-            newLampada.transform.Rotate(new Vector3(0, 90, 0));
+            if (indexWall == 1)
+            {
+                newLampada.transform.Rotate(new Vector3(0, 180, 0));
+            }
         }
     }
 }

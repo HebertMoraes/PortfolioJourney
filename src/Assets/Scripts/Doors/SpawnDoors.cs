@@ -16,10 +16,11 @@ public class SpawnDoors : MonoBehaviour
         spawnSystemObj = GameObject.FindGameObjectWithTag("GameController");
 
         int doorIndexChosen = spawnSystemObj.GetComponent<DoorManipulation>().EscolherParede();
-        GetComponent<SpawnLampada>().SpawnLamp(doorIndexChosen);
         
         Transform tranformParedeAtual = gameObject.transform.GetChild(
             doorIndexChosen);
+
+        GetComponent<SpawnLampada>().SpawnLamp(doorIndexChosen, tranformParedeAtual.transform.position.z);
     
         Vector3 posicaoSpawn = new Vector3(tranformParedeAtual.position.x, 
             tranformParedeAtual.position.y, tranformParedeAtual.position.z + Random.Range(-1, 2));
