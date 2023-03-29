@@ -23,11 +23,17 @@ public class MudarScene : MonoBehaviour
                 corredor.transform.position = SaveCorredor.posCorredores[i];
                 corredor.transform.rotation = SaveCorredor.rotationCorredores[i];
 
-                corredor.transform.GetChild(3).position = SaveCorredor.posDoors[i];
-                corredor.transform.GetChild(3).rotation = SaveCorredor.rotationDoors[i];
+                corredor.transform.GetChild(4).position = SaveCorredor.posDoors[i];
+                corredor.transform.GetChild(4).rotation = SaveCorredor.rotationDoors[i];
 
-                corredor.transform.GetChild(4).position = SaveCorredor.posObjFlutuantes[i];
-                corredor.transform.GetChild(4).rotation = SaveCorredor.rotationObjFlutuantes[i];
+                //caso o que está salvo seja o dummy, destruir o que está no momento para spawnar o dummy no lugar dele, 
+                //com a nova position e rotation
+                corredor.transform.GetChild(5).position = SaveCorredor.posObjFlutuantes[i];
+                corredor.transform.GetChild(5).rotation = SaveCorredor.rotationObjFlutuantes[i];
+                //caso o que está salvo seja o dummy, destruir o que está no momento para spawnar o dummy no lugar dele, 
+                //com a nova position e rotation
+                corredor.transform.GetChild(3).position = SaveCorredor.posObjFixoCorredor[i];
+                corredor.transform.GetChild(3).rotation = SaveCorredor.rotationObjFixoCorredor[i];
 
                 i+=1;
             }
@@ -44,6 +50,9 @@ public class MudarScene : MonoBehaviour
 
             SaveCorredor.posObjFlutuantes.Clear();
             SaveCorredor.rotationObjFlutuantes.Clear();
+
+            SaveCorredor.posObjFixoCorredor.Clear();
+            SaveCorredor.rotationObjFixoCorredor.Clear();
         } 
     }
 
@@ -72,11 +81,17 @@ public class MudarScene : MonoBehaviour
             SaveCorredor.posCorredores.Add(corredor.transform.position);
             SaveCorredor.rotationCorredores.Add(corredor.transform.rotation);
 
-            SaveCorredor.posDoors.Add(corredor.transform.GetChild(3).position);
-            SaveCorredor.rotationDoors.Add(corredor.transform.GetChild(3).rotation);
+            SaveCorredor.posDoors.Add(corredor.transform.GetChild(4).position);
+            SaveCorredor.rotationDoors.Add(corredor.transform.GetChild(4).rotation);
 
-            SaveCorredor.posObjFlutuantes.Add(corredor.transform.GetChild(4).position);
-            SaveCorredor.rotationObjFlutuantes.Add(corredor.transform.GetChild(4).rotation);
+            //aqui precisa de uma verificação para ver se é o dummy ou não, e tratar no método Awake lá em cima 
+            //a partir disso, sendo: se for dummy, destruir o que está no seu lugar e spawnar o dummy
+            SaveCorredor.posObjFlutuantes.Add(corredor.transform.GetChild(5).position);
+            SaveCorredor.rotationObjFlutuantes.Add(corredor.transform.GetChild(5).rotation);
+            //aqui precisa de uma verificação para ver se é o dummy ou não, e tratar no método Awake lá em cima 
+            //a partir disso, sendo: se for dummy, destruir o que está no seu lugar e spawnar o dummy
+            SaveCorredor.posObjFixoCorredor.Add(corredor.transform.GetChild(3).position);
+            SaveCorredor.rotationObjFixoCorredor.Add(corredor.transform.GetChild(3).rotation);
         }
         
         SaveCorredor.posJogador = GameObject.FindGameObjectWithTag("Player").transform.position;

@@ -10,6 +10,8 @@ public static class SaveCorredor
     public static List<Quaternion> rotationDoors = new List<Quaternion>();
     public static List<Vector3> posObjFlutuantes = new List<Vector3>();
     public static List<Quaternion> rotationObjFlutuantes = new List<Quaternion>();
+    public static List<Vector3> posObjFixoCorredor = new List<Vector3>();
+    public static List<Quaternion> rotationObjFixoCorredor = new List<Quaternion>();
     //está sendo salva mas não usado (load), talvez nem use
     //public static List<Rigidbody> rigdObjFlutuantes = new List<Rigidbody>();
     public static Vector3 posJogador;

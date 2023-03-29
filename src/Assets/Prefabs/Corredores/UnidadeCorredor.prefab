@@ -92,6 +92,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fc33a5da2d1a1f488c4ad02f6ffc884, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  chanceToSpawn: 0.6
+  dummyObjFlutuante: {fileID: 1298291659582318948, guid: 2921f317be1f0c8419507f02b072b325, type: 3}
 --- !u!114 &8877672382917740399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105,6 +107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lampadaPrefab: {fileID: 5420765891474778149, guid: 0498e03f0370aba41885db86a13c8348, type: 3}
+  dummyLampadaPrefab: {fileID: 832046322332965184, guid: 995c38e6a53e7024ba30209e3e4651be, type: 3}
   posXSpawnLeft: -4.4
   posXSpawnRight: 4.4
   posYToSpawn: 2.2

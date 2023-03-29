@@ -5,6 +5,7 @@ using UnityEngine;
 public class SpawnLampada : MonoBehaviour
 {
     public GameObject lampadaPrefab;
+    public GameObject dummyLampadaPrefab;
 
     public float posXSpawnLeft;
     public float posXSpawnRight;
@@ -44,6 +45,13 @@ public class SpawnLampada : MonoBehaviour
             {
                 newLampada.transform.Rotate(new Vector3(0, 180, 0));
             }
+        } else {
+            GameObject newLampada = Instantiate(
+                dummyLampadaPrefab,
+                new Vector3(0, 0, 0),
+                lampadaPrefab.transform.rotation,
+                transform
+            );
         }
     }
 }

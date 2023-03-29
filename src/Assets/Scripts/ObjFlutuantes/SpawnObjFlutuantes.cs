@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class SpawnObjFlutuantes : MonoBehaviour
 {
+    public float chanceToSpawn;
+    public GameObject dummyObjFlutuante;
     private GameObject spawnSystemObj;
+    
 
     private void Start() {
         //esse método deve existir e vazio para que exista a caixa de Enable no editor,
@@ -13,20 +16,29 @@ public class SpawnObjFlutuantes : MonoBehaviour
 
     public void SpawnObjFlutuantesMethod()       
     {
-        spawnSystemObj = GameObject.FindGameObjectWithTag("GameController");
-    
-        Vector3 posicaoSpawn = new Vector3(
-            gameObject.transform.position.x + Random.Range((float)-2.5 - Random.value, 
-            (float)2.5 + Random.value), 
-            gameObject.transform.position.y + Random.Range((float)2.5 - Random.value, 
-            (float)4.1 + Random.value), 
-            gameObject.transform.position.z + Random.Range((float)-1.1 - Random.value, 
-            (float)1.1 + Random.value));
+        if (chanceToSpawn >= Random.value) {
 
-        GameObject objFlutuanteParaSpawnar = spawnSystemObj.GetComponent<ObjFlutuanteManipulation>().
-           EscolherObjSpawnar();
+            spawnSystemObj = GameObject.FindGameObjectWithTag("GameController");
+        
+            Vector3 posicaoSpawn = new Vector3(
+                gameObject.transform.position.x + Random.Range((float)-2.5 - Random.value, 
+                (float)2.5 + Random.value), 
+                gameObject.transform.position.y + Random.Range((float)2.5 - Random.value, 
+                (float)4.1 + Random.value), 
+                gameObject.transform.position.z + Random.Range((float)-1.1 - Random.value, 
+                (float)1.1 + Random.value));
 
-        Instantiate(objFlutuanteParaSpawnar, posicaoSpawn, 
-            objFlutuanteParaSpawnar.transform.rotation, gameObject.transform);
+            GameObject objFlutuanteParaSpawnar = spawnSystemObj.GetComponent<ObjFlutuanteManipulation>().
+            EscolherObjSpawnar();
+
+            Instantiate(objFlutuanteParaSpawnar, posicaoSpawn, 
+                objFlutuanteParaSpawnar.transform.rotation, gameObject.transform);
+        } else {
+            Instantiate(dummyObjFlutuante, 
+                new Vector3(), 
+                dummyObjFlutuante.transform.rotation, 
+                gameObject.transform
+            );
+        }
     }
 }
