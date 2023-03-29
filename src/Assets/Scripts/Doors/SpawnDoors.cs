@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SpawnDoors : MonoBehaviour
 {
+    public float posXSpawnDoorLeft;
+    public float posXSpawnDoorRight;
     private GameObject spawnSystemObj;
 
     private void Start() {
@@ -22,8 +24,11 @@ public class SpawnDoors : MonoBehaviour
 
         GetComponent<SpawnLampada>().SpawnLamp(doorIndexChosen, tranformParedeAtual.transform.position.z);
     
-        Vector3 posicaoSpawn = new Vector3(tranformParedeAtual.position.x, 
-            tranformParedeAtual.position.y, tranformParedeAtual.position.z + Random.Range(-1, 2));
+        Vector3 posicaoSpawn = new Vector3(
+            doorIndexChosen == 0? posXSpawnDoorLeft : posXSpawnDoorRight, 
+            tranformParedeAtual.position.y, 
+            tranformParedeAtual.position.z + Random.Range(-1, 2)
+        );
 
         GameObject portaParaSpawnar = spawnSystemObj.GetComponent<DoorManipulation>().
             EscolherPortaSpawnar();
