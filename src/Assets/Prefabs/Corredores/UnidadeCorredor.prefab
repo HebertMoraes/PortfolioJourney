@@ -111,7 +111,7 @@ MonoBehaviour:
   posXSpawnLeft: -4.4
   posXSpawnRight: 4.4
   posYToSpawn: 2.2
-  chanceToSpawn: 0.5
+  chanceToSpawn: 1
 --- !u!1 &3758949160765996775
 GameObject:
   m_ObjectHideFlags: 0
