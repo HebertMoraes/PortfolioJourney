@@ -18,7 +18,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &5281247592688362334
 Transform:
@@ -161,7 +161,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &7493415199120165847
 Transform:
@@ -242,7 +242,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &5017872848525533162
 Transform:
@@ -299,7 +299,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &430086188317030109
 Transform:
@@ -326,9 +326,33 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 430086188317030109}
     m_Modifications:
+    - target: {fileID: 1216319937560367380, guid: e3e1511af8fd0e14ba6e9d1e6cc9ed82, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1548198148103448348, guid: e3e1511af8fd0e14ba6e9d1e6cc9ed82, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4382704644522767544, guid: e3e1511af8fd0e14ba6e9d1e6cc9ed82, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4716298471368551138, guid: e3e1511af8fd0e14ba6e9d1e6cc9ed82, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5732557666284893813, guid: e3e1511af8fd0e14ba6e9d1e6cc9ed82, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5819474603565290392, guid: e3e1511af8fd0e14ba6e9d1e6cc9ed82, type: 3}
       propertyPath: m_Name
       value: Slugan3Txt
+      objectReference: {fileID: 0}
+    - target: {fileID: 5819474603565290392, guid: e3e1511af8fd0e14ba6e9d1e6cc9ed82, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6595871287008741666, guid: e3e1511af8fd0e14ba6e9d1e6cc9ed82, type: 3}
       propertyPath: m_RootOrder
@@ -384,6 +408,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6595871287008741666, guid: e3e1511af8fd0e14ba6e9d1e6cc9ed82, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6791705158192570242, guid: e3e1511af8fd0e14ba6e9d1e6cc9ed82, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7361367685399121816, guid: e3e1511af8fd0e14ba6e9d1e6cc9ed82, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

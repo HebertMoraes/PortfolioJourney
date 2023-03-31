@@ -3617,3 +3617,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6094dd380cce5d745b68f4e2597ff94e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dummyObjFlutuantePrefab: {fileID: 1298291659582318948, guid: 2921f317be1f0c8419507f02b072b325, type: 3}
+  objFlutuantePrefab: {fileID: 0}
+  lampadaPrefab: {fileID: 5420765891474778149, guid: 0498e03f0370aba41885db86a13c8348, type: 3}

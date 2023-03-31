@@ -5,21 +5,22 @@ using UnityEngine;
 
 public class MudarScene : MonoBehaviour
 {
+    public GameObject dummyObjFlutuantePrefab;
+    public GameObject objFlutuantePrefab;
+    public GameObject lampadaPrefab;
     private GameObject[] listaCorredores;
 
     //talvez precisa ser no start e não awake
-    private void Awake() {
-        
+    private void Awake()
+    {
         listaCorredores = GameObject.FindGameObjectsWithTag("Corredor");
 
         //Se não for a primeira vez
-        if (SaveCorredor.possuiSave) 
+        if (SaveCorredor.possuiSave)
         {
             int i = 0;
             foreach (GameObject corredor in listaCorredores)
             {
-                //reposicionar os corredores e seus objetos filhos
-                //para os dados das listas do save
                 corredor.transform.position = SaveCorredor.posCorredores[i];
                 corredor.transform.rotation = SaveCorredor.rotationCorredores[i];
 
@@ -28,19 +29,72 @@ public class MudarScene : MonoBehaviour
 
                 //caso o que está salvo seja o dummy, destruir o que está no momento para spawnar o dummy no lugar dele, 
                 //com a nova position e rotation
-                corredor.transform.GetChild(5).position = SaveCorredor.posObjFlutuantes[i];
-                corredor.transform.GetChild(5).rotation = SaveCorredor.rotationObjFlutuantes[i];
+                if (!SaveCorredor.dummyOrNoObjFlutuante[i])
+                {
+                    GameObject currentObjFlutuante = corredor.transform.GetChild(5).gameObject;
+
+                    if (currentObjFlutuante.name.Contains("DummyObjFlutuante"))
+                    {
+                        Transform transformObjFlutuante = currentObjFlutuante.transform;
+                        Destroy(currentObjFlutuante);
+                        //precisa saber o tipo correto de objFlutuante
+                        Instantiate(objFlutuantePrefab,
+                            transformObjFlutuante.position,
+                            transformObjFlutuante.rotation,
+                            corredor.transform
+                        );
+                    }
+                    else
+                    {
+                        //aqui pode acontecer de o objFlutuante reposicionado seja diferente do que era no save, 
+                        //vai vir pelo o que está padrã no inicio da scene, descrito no editor
+                        corredor.transform.GetChild(5).position = SaveCorredor.posObjFlutuantes[i];
+                        corredor.transform.GetChild(5).rotation = SaveCorredor.rotationObjFlutuantes[i];
+                    }
+
+                }
+                else
+                {
+                    corredor.transform.GetChild(5).position = SaveCorredor.posObjFlutuantes[i];
+                    corredor.transform.GetChild(5).rotation = SaveCorredor.rotationObjFlutuantes[i];
+                }
+
                 //caso o que está salvo seja o dummy, destruir o que está no momento para spawnar o dummy no lugar dele, 
                 //com a nova position e rotation
-                corredor.transform.GetChild(3).position = SaveCorredor.posObjFixoCorredor[i];
-                corredor.transform.GetChild(3).rotation = SaveCorredor.rotationObjFixoCorredor[i];
+                if (!SaveCorredor.dummyOrNoLampada[i])
+                {
+                    GameObject currentLampada = corredor.transform.GetChild(3).gameObject;
 
-                i+=1;
+                    if (currentLampada.name.Contains("DummyLampada"))
+                    {
+                        Destroy(currentLampada);
+                        //precisa saber o tipo correto de objFlutuante
+                        Instantiate(lampadaPrefab,
+                            SaveCorredor.posLampada[i],
+                            SaveCorredor.rotationLampada[i],
+                            corredor.transform
+                        );
+                    }
+                    else
+                    {
+                        //aqui pode acontecer de a lampada reposicionado seja diferente do que era no save, 
+                        //vai vir pelo o que está padrã no inicio da scene, descrito no editor
+                        corredor.transform.GetChild(3).position = SaveCorredor.posLampada[i];
+                        corredor.transform.GetChild(3).rotation = SaveCorredor.rotationLampada[i];
+                    }
+                }
+                else
+                {
+                    corredor.transform.GetChild(3).position = SaveCorredor.posLampada[i];
+                    corredor.transform.GetChild(3).rotation = SaveCorredor.rotationLampada[i];
+                }
+
+                i += 1;
             }
-            
+
             GameObject.FindGameObjectWithTag("Player").transform.SetPositionAndRotation(
                     SaveCorredor.posJogador, SaveCorredor.rotationJogador);
-            
+
             //apagar tudo das listas do save, resetar
             SaveCorredor.posCorredores.Clear();
             SaveCorredor.rotationCorredores.Clear();
@@ -51,9 +105,12 @@ public class MudarScene : MonoBehaviour
             SaveCorredor.posObjFlutuantes.Clear();
             SaveCorredor.rotationObjFlutuantes.Clear();
 
-            SaveCorredor.posObjFixoCorredor.Clear();
-            SaveCorredor.rotationObjFixoCorredor.Clear();
-        } 
+            SaveCorredor.posLampada.Clear();
+            SaveCorredor.rotationLampada.Clear();
+
+            SaveCorredor.dummyOrNoObjFlutuante.Clear();
+            SaveCorredor.dummyOrNoLampada.Clear();
+        }
     }
 
     //pelo o que eu vi, as vezes buga não sei porque e o jogador não volta na sua última posição
@@ -63,11 +120,11 @@ public class MudarScene : MonoBehaviour
     //ALTERADOS SUAS POSIÇÕES PARA OS DO SAVE PODEM NÃO ESTAR CARREGANDO ASSIM COMO O JOGADOR
     //E ASSSIM, VOLTANDO AOS DADOS DO EDITOR, POSIVEL SOLUÇÃO: UM MONOBEHAVIOR GERAL EM CADA UM
     //DOS PREFABS DESSES OBJETOS E LÁ É QUE FAZ O LOAD DE SUAS POSIÇÕES E ROTAÇÕES QUANDO SE DEVE.
-    private void Start() {
+    private void Start()
+    {
         GameObject.FindGameObjectWithTag("Player").transform.SetPositionAndRotation(
                     SaveCorredor.posJogador, SaveCorredor.rotationJogador);
     }
-    
 
     public void mudarSalvarObjs(string sceneToEnter)
     {
@@ -77,7 +134,7 @@ public class MudarScene : MonoBehaviour
         {
             //salvar os dados dos corredores e seus objetos filhos
             //nas listas do save
-            
+
             SaveCorredor.posCorredores.Add(corredor.transform.position);
             SaveCorredor.rotationCorredores.Add(corredor.transform.rotation);
 
@@ -88,12 +145,28 @@ public class MudarScene : MonoBehaviour
             //a partir disso, sendo: se for dummy, destruir o que está no seu lugar e spawnar o dummy
             SaveCorredor.posObjFlutuantes.Add(corredor.transform.GetChild(5).position);
             SaveCorredor.rotationObjFlutuantes.Add(corredor.transform.GetChild(5).rotation);
+            if (corredor.transform.GetChild(5).gameObject.name.Contains("DummyObjFlutuante"))
+            {
+                SaveCorredor.dummyOrNoObjFlutuante.Add(true);
+            }
+            else
+            {
+                SaveCorredor.dummyOrNoObjFlutuante.Add(false);
+            }
             //aqui precisa de uma verificação para ver se é o dummy ou não, e tratar no método Awake lá em cima 
             //a partir disso, sendo: se for dummy, destruir o que está no seu lugar e spawnar o dummy
-            SaveCorredor.posObjFixoCorredor.Add(corredor.transform.GetChild(3).position);
-            SaveCorredor.rotationObjFixoCorredor.Add(corredor.transform.GetChild(3).rotation);
+            SaveCorredor.posLampada.Add(corredor.transform.GetChild(3).position);
+            SaveCorredor.rotationLampada.Add(corredor.transform.GetChild(3).rotation);
+            if (corredor.transform.GetChild(3).gameObject.name.Contains("DummyLampada"))
+            {
+                SaveCorredor.dummyOrNoLampada.Add(true);
+            }
+            else
+            {
+                SaveCorredor.dummyOrNoLampada.Add(false);
+            }
         }
-        
+
         SaveCorredor.posJogador = GameObject.FindGameObjectWithTag("Player").transform.position;
         SaveCorredor.rotationJogador = GameObject.FindGameObjectWithTag("Player").transform.rotation;
 
