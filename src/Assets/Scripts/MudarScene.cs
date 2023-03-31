@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class MudarScene : MonoBehaviour
 {
-    public GameObject dummyObjFlutuantePrefab;
     public GameObject objFlutuantePrefab;
     public GameObject lampadaPrefab;
     private GameObject[] listaCorredores;
@@ -35,12 +34,12 @@ public class MudarScene : MonoBehaviour
 
                     if (currentObjFlutuante.name.Contains("DummyObjFlutuante"))
                     {
-                        Transform transformObjFlutuante = currentObjFlutuante.transform;
+                        // Transform transformObjFlutuante = currentObjFlutuante.transform;
                         Destroy(currentObjFlutuante);
                         //precisa saber o tipo correto de objFlutuante
                         Instantiate(objFlutuantePrefab,
-                            transformObjFlutuante.position,
-                            transformObjFlutuante.rotation,
+                            SaveCorredor.posObjFlutuantes[i],
+                            SaveCorredor.rotationObjFlutuantes[i],
                             corredor.transform
                         );
                     }
@@ -67,7 +66,7 @@ public class MudarScene : MonoBehaviour
 
                     if (currentLampada.name.Contains("DummyLampada"))
                     {
-                        Destroy(currentLampada);
+                        // Destroy(currentLampada);
                         //precisa saber o tipo correto de objFlutuante
                         Instantiate(lampadaPrefab,
                             SaveCorredor.posLampada[i],
@@ -110,6 +109,8 @@ public class MudarScene : MonoBehaviour
 
             SaveCorredor.dummyOrNoObjFlutuante.Clear();
             SaveCorredor.dummyOrNoLampada.Clear();
+            
+            SaveCorredor.possuiSave = false;
         }
     }
 
