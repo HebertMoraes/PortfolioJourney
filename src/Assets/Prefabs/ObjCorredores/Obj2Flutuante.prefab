@@ -168,5 +168,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c475317803855094a9c85e3025103b4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  txtLegenda: Experiencia em Jira Software, Bitbucket e GitHub.
-  tempoComLegendaOn: 2
+  txtLegenda: Experiencia em Jira Software, Bitbucket e GitHub
+  tempoComLegendaOn: 3

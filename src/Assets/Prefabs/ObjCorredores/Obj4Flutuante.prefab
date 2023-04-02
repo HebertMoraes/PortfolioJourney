@@ -168,8 +168,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c475317803855094a9c85e3025103b4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  txtLegenda: "Trabalhei por volta de 1 ano na EvoSystems, empresa de tecnologia,
-    sendo terceirizado para atuar no banco Bradesco, pelo mesmo per\xEDodo. e na
-    EvoSystems, aprendi diversas maneiras de se planejar e criar softwares, al\xE9m
-    de conhecer in\xFAmeras novas tecnologias."
+  txtLegenda: "experi\xEAncia com frameworks de desenvolvimento front-end como \xE2ngular,
+    Jest, Jasmine, Sass"
   tempoComLegendaOn: 5
