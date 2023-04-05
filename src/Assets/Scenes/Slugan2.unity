@@ -501,11 +501,11 @@ PrefabInstance:
       objectReference: {fileID: 644075699}
     - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
       propertyPath: imagensVideos.Array.size
-      value: 8
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
       propertyPath: tempoCadaImagem.Array.size
-      value: 7
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
       propertyPath: imagensVideos.Array.data[0]
@@ -518,15 +518,15 @@ PrefabInstance:
     - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
       propertyPath: imagensVideos.Array.data[2]
       value: 
-      objectReference: {fileID: 2800000, guid: 166e05297fe0b604484bf9a793c77e64, type: 3}
+      objectReference: {fileID: 2800000, guid: ecca7886a1123634aa015f30f90a279d, type: 3}
     - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
       propertyPath: imagensVideos.Array.data[3]
       value: 
-      objectReference: {fileID: 2800000, guid: 2e32d66038bc62744bae0530fa6e7b0f, type: 3}
+      objectReference: {fileID: 2800000, guid: 30bf7452fd2b1c14e812ca7ed4d2cc99, type: 3}
     - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
       propertyPath: imagensVideos.Array.data[4]
       value: 
-      objectReference: {fileID: 2800000, guid: 30bf7452fd2b1c14e812ca7ed4d2cc99, type: 3}
+      objectReference: {fileID: 2800000, guid: 2e32d66038bc62744bae0530fa6e7b0f, type: 3}
     - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
       propertyPath: imagensVideos.Array.data[5]
       value: 
@@ -534,9 +534,21 @@ PrefabInstance:
     - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
       propertyPath: imagensVideos.Array.data[6]
       value: 
-      objectReference: {fileID: 2800000, guid: ecca7886a1123634aa015f30f90a279d, type: 3}
+      objectReference: {fileID: 2800000, guid: 166e05297fe0b604484bf9a793c77e64, type: 3}
     - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
       propertyPath: imagensVideos.Array.data[7]
+      value: 
+      objectReference: {fileID: 2800000, guid: 35de17160b47bd348a2d06b91d1774df, type: 3}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: imagensVideos.Array.data[8]
+      value: 
+      objectReference: {fileID: 2800000, guid: ecca7886a1123634aa015f30f90a279d, type: 3}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: imagensVideos.Array.data[9]
+      value: 
+      objectReference: {fileID: 2800000, guid: 166e05297fe0b604484bf9a793c77e64, type: 3}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: imagensVideos.Array.data[10]
       value: 
       objectReference: {fileID: 2800000, guid: cfcb142458a284a45be7f89fc3eda5cc, type: 3}
     - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
@@ -549,23 +561,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
       propertyPath: tempoCadaImagem.Array.data[2]
-      value: 10
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
       propertyPath: tempoCadaImagem.Array.data[3]
-      value: 10
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
       propertyPath: tempoCadaImagem.Array.data[4]
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
       propertyPath: tempoCadaImagem.Array.data[5]
-      value: 15
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
       propertyPath: tempoCadaImagem.Array.data[6]
-      value: 10
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: tempoCadaImagem.Array.data[7]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: tempoCadaImagem.Array.data[8]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: tempoCadaImagem.Array.data[9]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: tempoCadaImagem.Array.data[10]
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8615102363034735460, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
       propertyPath: m_LocalScale.x
