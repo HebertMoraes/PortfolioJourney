@@ -227,6 +227,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4344501634043639278, guid: 7336d304c4d0d3e46a14ba9c14a80319, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4776639226149597290, guid: 7336d304c4d0d3e46a14ba9c14a80319, type: 3}
       propertyPath: m_text
       value: PRESS X TO ENTER
@@ -317,6 +321,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8481150132161563994, guid: 7336d304c4d0d3e46a14ba9c14a80319, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8971219894208280939, guid: 7336d304c4d0d3e46a14ba9c14a80319, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -501,12 +509,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2573894749870537754, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2573894749870537754, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 2f6f1da2b1e0048408753140a51e3e69, type: 3}
+      objectReference: {fileID: 8300000, guid: 4370acf07b0bd7a40be7cebf09c887e6, type: 3}
     - target: {fileID: 2573894749870537754, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
       propertyPath: m_PlayOnAwake
       value: 0
@@ -541,7 +549,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
       propertyPath: imagensVideos.Array.size
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
       propertyPath: tempoCadaImagem.Array.size
@@ -579,6 +587,10 @@ PrefabInstance:
       propertyPath: imagensVideos.Array.data[7]
       value: 
       objectReference: {fileID: 2800000, guid: f718993fe25067d43a920489655c608a, type: 3}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: imagensVideos.Array.data[8]
+      value: 
+      objectReference: {fileID: 2800000, guid: cfcb142458a284a45be7f89fc3eda5cc, type: 3}
     - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
       propertyPath: tempoCadaImagem.Array.data[0]
       value: 8

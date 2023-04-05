@@ -396,19 +396,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2573894749870537754, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2573894749870537754, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 385d4269a64f18343873cf3527a2d8ab, type: 3}
+      objectReference: {fileID: 8300000, guid: 02d66989568f11e4991b9e1dc7eca6e8, type: 3}
     - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
       propertyPath: cortinasAnim
       value: 
       objectReference: {fileID: 830225120}
     - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
       propertyPath: imagensVideos.Array.size
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
       propertyPath: tempoCadaImagem.Array.size
@@ -442,6 +442,10 @@ PrefabInstance:
       propertyPath: imagensVideos.Array.data[6]
       value: 
       objectReference: {fileID: 2800000, guid: 095f7f63e2f47504a9570e26829c6362, type: 3}
+    - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
+      propertyPath: imagensVideos.Array.data[7]
+      value: 
+      objectReference: {fileID: 2800000, guid: cfcb142458a284a45be7f89fc3eda5cc, type: 3}
     - target: {fileID: 7560139708322259278, guid: 18dfbe23f83675041b1c209e71bf7977, type: 3}
       propertyPath: tempoCadaImagem.Array.data[0]
       value: 0
