@@ -1,7 +1,7 @@
 mergeInto(LibraryManager.library, {
 
-  Hello: function () {
-    window.alert("Hello, world!");
+  ScrollDownGameDetail: function (number) {
+    window.alert(number);
   },
 
 });
