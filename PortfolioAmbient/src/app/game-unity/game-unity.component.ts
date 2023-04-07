@@ -10,11 +10,11 @@ import { Router } from '@angular/router';
 })
 export class GameUnityComponent implements OnInit {
 
-  constructor(
-    private router: Router
-  ) {
+  // constructor(
+  //   private router: Router
+  // ) {
 
-  }
+  // }
 
   async ngOnInit() {
 
