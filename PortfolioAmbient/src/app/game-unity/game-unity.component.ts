@@ -24,8 +24,8 @@ export class GameUnityComponent implements OnInit {
       frameworkUrl: buildUrl + "/docs.framework.js",
       codeUrl: buildUrl + "/docs.wasm",
       streamingAssetsUrl: "StreamingAssets",
-      companyName: "JoeMoceri",
-      productName: "Unity Effects Pack",
+      companyName: "DefaultCompany",
+      productName: "PortfolioJourney",
       productVersion: "0.1",
       devicePixelRatio: 0
     };
