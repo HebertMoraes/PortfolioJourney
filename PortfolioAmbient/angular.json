@@ -30,9 +30,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.sass"
+              "src/styles.sass", 
+              "src/assets/docs/TemplateData/style.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/docs/Build/docs.loader.js"
+            ]
           },
           "configurations": {
             "production": {
