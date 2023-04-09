@@ -1,20 +1,32 @@
-#images-background-game {
+header {
+  display: flex;
+  flex-direction: column;
+}
+header #images-background-game {
   display: flex;
   flex-wrap: nowrap;
   margin: 0px;
   padding: 0px;
 }
-
-.image-background-game {
-  padding: 0 0px;
+header #images-background-game .image-background-game {
+  padding: 0px;
   height: 100%;
 }
-
-.image-background-game img {
+header #images-background-game .image-background-game img {
   width: 100%;
   height: 100%;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .tittle-primary {
+    margin-top: 300px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+  .tittle-primary {
+    margin-top: 80px;
+  }
+}
 .tittle-primary {
   color: white;
   font-size: 40px;
@@ -35,10 +47,12 @@
   justify-content: left;
   padding: 30px;
 }
+#blocks-detail-games .block-detail-game .img-left {
+  width: 350px;
+}
 #blocks-detail-games .block-detail-game .img-left img {
   width: 100%;
   height: 100%;
-  max-width: 350px;
 }
 #blocks-detail-games .block-detail-game .about-game {
   padding-left: 30px;
@@ -87,6 +101,14 @@
   background-color: #53A7BB;
   color: white;
   border-color: #53A7BB;
+}
+#blocks-detail-games .block-detail-game .about-game .footer-game-detail .buttons button:hover {
+  background-color: #2e91aa;
+  border-color: #2e91aa;
+}
+#blocks-detail-games .block-detail-game .about-game .footer-game-detail .buttons button:active {
+  background-color: #13738b;
+  border-color: #13738b;
 }
 
 #footer {
