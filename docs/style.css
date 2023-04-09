@@ -115,4 +115,17 @@ header #images-background-game .image-background-game img {
   width: 100%;
   height: 250px;
   background-color: rgb(129, 161, 190);
+  padding-top: 70px;
+  padding-bottom: 40px;
+}
+#footer .buttons-social-medias {
+  display: flex;
+  justify-content: center;
+}
+#footer .buttons-social-medias .button-social-media {
+  border-radius: 1px;
+  border-color: black;
+  background-color: rgb(129, 161, 190);
+  border-radius: 8px;
+  margin-inline: 100px;
 }/*# sourceMappingURL=style.css.map */

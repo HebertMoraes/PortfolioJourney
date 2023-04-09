@@ -136,4 +136,19 @@ header{
     width: 100%;
     height: 250px;
     background-color: rgb(129, 161, 190);
+    padding-top: 70px;
+    padding-bottom: 40px;
+
+    .buttons-social-medias{
+        display: flex;
+        justify-content: center;
+
+        .button-social-media{
+            border-radius: 1px;
+            border-color: black;
+            background-color: rgb(129, 161, 190);
+            border-radius: 8px;
+            margin-inline: 100px;
+        }
+    }
 }
