@@ -113,10 +113,10 @@ header #images-background-game .image-background-game img {
 
 #footer {
   width: 100%;
-  height: 250px;
+  height: 300px;
   background-color: rgb(129, 161, 190);
-  padding-top: 70px;
-  padding-bottom: 40px;
+  padding-top: 60px;
+  padding-bottom: 20px;
 }
 #footer .buttons-social-medias {
   display: flex;
@@ -127,5 +127,14 @@ header #images-background-game .image-background-game img {
   border-color: black;
   background-color: rgb(129, 161, 190);
   border-radius: 8px;
-  margin-inline: 100px;
+  margin-inline: 30px;
+}
+#footer .img-tag {
+  display: flex;
+  justify-content: center;
+}
+#footer .img-tag img {
+  width: 8%;
+  height: 8%;
+  margin-top: 45px;
 }/*# sourceMappingURL=style.css.map */
